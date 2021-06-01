@@ -1,2 +1,2 @@
-# jrubber
-App React Native, clone ubber
+# jrwntregas
+App React Native, app de entregas
