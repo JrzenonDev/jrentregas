@@ -7,12 +7,12 @@ export default function Home({ navigation }) {
     <View style={css.container2}>
 
       <TouchableOpacity style={css.btnHome} onPress={() => navigation.navigate('Login') } >
-        <Image style={css.imgBtn} source={require('../assets/img/login.png')} />
+        <Image style={css.img} source={require('../assets/img/login.png')} />
       </TouchableOpacity>
 
 
       <TouchableOpacity onPress={() => navigation.navigate('Rastreio', {id: 86}) } >
-        <Image style={css.imgBtn} source={require('../assets/img/rastreiamento.png')} />
+        <Image style={css.img} source={require('../assets/img/rastreiamento.png')} />
       </TouchableOpacity>
 
     </View>
