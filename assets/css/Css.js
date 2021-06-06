@@ -7,9 +7,23 @@ const css = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  container2: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   textPage: {
     backgroundColor: 'orange',
     padding: 20,
+  },
+  imgBtn: {
+    height: 100,
+    width: 100
+  },
+  btnHome: {
+    marginRight: 50
   }
 });
 

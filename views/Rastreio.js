@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-export default function Login() {
+export default function Rastreio() {
   return(
     <View>
-      <Text>Login do app</Text>
+      <Text>Rastreio do app </Text>
     </View>
   );
 }
