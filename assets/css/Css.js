@@ -36,7 +36,7 @@ const css = StyleSheet.create({
     marginBottom: 15,
     display: text
   }),
-  login__fomr: {
+  login__form: {
     width: "80%"
   },
   login__input: {
@@ -55,6 +55,11 @@ const css = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 22,
     color: "#333"
+  },
+  img__logomarca: {
+    width: 100,
+    height: 100,
+    marginBottom: 30
   }
 });
 

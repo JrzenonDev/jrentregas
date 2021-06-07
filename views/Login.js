@@ -13,14 +13,11 @@ export default function Login() {
     >
 
       <View>
-        <Image style={css.img} source={require('../assets/img/logo.png')} />
+        <Image style={css.img__logomarca} source={require('../assets/img/logo.png')} />
       </View>
 
       <View>
-
         <Text style={css.login__msg(display)}>Usuário ou senha inválidos</Text>
-        {/* <Text style={showMsg ? css.login__msg : [css.login__msg, css.hidden]}>Usuário ou Senha inválidos</Text> */}
-
       </View>
 
       <View style={css.login__form}>
