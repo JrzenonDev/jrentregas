@@ -28,13 +28,14 @@ const css = StyleSheet.create({
   dakbg: {
     backgroundColor: "#333"
   },
-  login__msg: {
+  login__msg: (text='none') =>({
     fontWeight: "bold",
     fontSize: 22,
     color: "red",
     marginTop: 10,
-    marginBottom: 15
-  },
+    marginBottom: 15,
+    display: text
+  }),
   login__fomr: {
     width: "80%"
   },
