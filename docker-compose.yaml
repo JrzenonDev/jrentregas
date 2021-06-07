@@ -1,0 +1,32 @@
+version: '3'
+services:
+  api:
+    image: wxti/locaweb
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+    links:
+      - mysql
+    working_dir: /var/www/html
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 82:80
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - TESTSUITE_PASSWORD=
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=db_jrentregas
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d/
